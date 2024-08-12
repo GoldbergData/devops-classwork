@@ -21,3 +21,5 @@ plot <- df %>%
   ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
   geom_point() + 
   geom_smooth(method = "lm")
+
+renv::snapshot()
